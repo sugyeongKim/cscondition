@@ -104,6 +104,36 @@ namespace cscondition
                 Console.WriteLine("*^^* 인사 안하세요?? ^^");
             }
 
-        }
+            ConsoleKeyInfo info = Console.ReadKey();
+            switch (info.Key)
+            {
+
+                case ConsoleKey.UpArrow:
+                    Console.WriteLine("위로 이동");
+                    break;
+                case ConsoleKey.DownArrow:
+                    Console.WriteLine("아래로 이동");
+                    break;
+                case ConsoleKey.LeftArrow:
+                    Console.WriteLine("왼쪽으로 이동");
+                    break;
+                case ConsoleKey.RightArrow:
+                    Console.WriteLine("오른쪽로 이동");
+                    break;
+                default:
+                    switch (info.KeyChar)
+                    {
+                        /*case (char)38:
+                            Console.WriteLine("위로 이동");
+                            break;*/
+                        case '가':
+                            Console.WriteLine("가가가");
+                            break;
+                        default:
+                            Console.WriteLine("다른 키를 입력");
+                            break;
+                    }
+                    break;
+            }
     }
 }
