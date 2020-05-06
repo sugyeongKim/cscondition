@@ -46,7 +46,6 @@ namespace cscondition
                 Console.WriteLine("저녁 먹을 시간");
             }
                 
-            }
             
 
         }
