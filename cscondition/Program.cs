@@ -37,16 +37,14 @@ namespace cscondition
             if(DateTime.Now.Hour < 12)
             {
                 Console.WriteLine("아침 먹을 시간");
-            }else
+            }else if(DateTime.Now.Hour < 15)
             {
-                if(DateTime.Now.Hour < 15)
-                {
-                    Console.WriteLine("점심 먹을 시간");
-                }
-                else
-                {
-                    Console.WriteLine("저녁 먹을 시간");
-                }
+                Console.WriteLine("점심 먹을 시간");
+            }
+            else
+            {
+                Console.WriteLine("저녁 먹을 시간");
+            }
                 
             }
             
